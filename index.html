@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Multiplayer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Home Screen -->
+  <div id="home-screen">
+  <h1>Flappy Bird Multiplayer</h1>
+  <button id="play-btn">Play</button>
+  <button id="customize-btn">Customize</button>
+  <button id="leaderboard-btn">Leaderboard</button>
+</div>
+
+
+  <!-- Customize Screen -->
+  <div id="customize-screen" style="display:none;">
+    <h2>Customize Your Bird</h2>
+<div id="color-options">
+  <button class="color-btn" data-color="yellow" style="background: yellow;"></button>
+  <button class="color-btn" data-color="red" style="background: red;"></button>
+  <button class="color-btn" data-color="blue" style="background: blue;"></button>
+  <button class="color-btn" data-color="green" style="background: green;"></button>
+</div>
+
+<br>
+<button id="back-btn">Back</button>
+  </div>
+
+  <!-- Leaderboard Screen -->
+  <div id="leaderboard-screen" style="display:none;">
+    <h2>Leaderboard</h2>
+    <p>(We will add scores later)</p>
+    <button id="back-home-2">Back</button>
+  </div>
+
+  <!-- Game Canvas -->
+  <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+  <!-- Scripts -->
+  <script src="game.js"></script>
+</body>
+</html>

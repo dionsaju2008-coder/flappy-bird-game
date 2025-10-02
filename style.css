@@ -1,0 +1,96 @@
+/* ---------- GENERAL STYLES ---------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #70c5ce; /* light sky blue */
+}
+
+/* ---------- HOME SCREEN ---------- */
+#home-screen {
+  margin-top: 100px;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ffcc00;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #ffaa00;
+}
+
+/* ---------- GAME CANVAS ---------- */
+#gameCanvas {
+  display: none; /* hidden until Play is clicked */
+  margin: 20px auto;
+  border: 2px solid black;
+  background: #cceeff; /* sky */
+}
+
+/* ---------- CUSTOMIZE SCREEN ---------- */
+#customize-screen {
+  display: none;
+  margin-top: 100px;
+}
+
+#customize-screen button {
+  background: #66ccff;
+  color: white;
+}
+
+#customize-screen button:hover {
+  background: #3399ff;
+}
+
+/* ---------- LEADERBOARD SCREEN ---------- */
+#leaderboard-screen {
+  display: none;
+  margin-top: 100px;
+}
+
+#leaderboard-screen button {
+  background: #ff6699;
+  color: white;
+}
+
+#leaderboard-screen button:hover {
+  background: #ff3366;
+}
+
+/* ---------- HEADINGS ---------- */
+h1, h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* ---------- OPTIONAL: SCORE TEXT ---------- */
+#gameCanvas + p {
+  font-size: 20px;
+  font-weight: bold;
+}
+#color-options {
+  margin: 20px;
+}
+
+.color-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.color-btn:hover {
+  transform: scale(1.1);
+}
